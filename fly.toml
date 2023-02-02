@@ -13,7 +13,7 @@ CONFIG_FILE_URL = "https://drgraph.cf/raw/7AjbmK1H"
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 2333
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
