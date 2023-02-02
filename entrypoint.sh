@@ -3,7 +3,7 @@
 if [[ -z "${Password}" ]]; then
   Password="5c301bb8-6c77-41a0-a606-4ba11bbab084"
 fi
-ENCRYPT="chacha20-ietf-poly1305"
+ENCRYPT="aes-256-gcm"
 QR_Path="/qr"
 
 #V2Ray Configuration
