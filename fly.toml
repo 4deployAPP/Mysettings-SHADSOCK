@@ -6,7 +6,6 @@ kill_timeout = 5
 processes = []
 
 [env]
-CONFIG_FILE_URL = "https://drgraph.cf/raw/7AjbmK1H"
 
 [experimental]
   auto_rollback = true
