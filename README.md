@@ -1,7 +1,3 @@
-# Personal VPN
-### Based on Shadowsocks with V2-Raу-plugin
-
-Click the button below to deploy, and remember to Star if it works:
 
 [![Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -70,42 +66,4 @@ Copy the details after opening and import it to the client.
 ```
 Change {Domain} with your server url and {password} with your password.
 
-## 3. Clients
 
-### Android 
-
-[shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks&hl=en_IN&gl=US)
-
-[v2-raу-plugin](http://bit.ly/3g5QjkP)
-
-### Windows
-
-[ShadowSocks-Windows](https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.4.1.0/Shadowsocks-4.4.1.0.zip)
-
-[V2-Raу Plugin](http://bit.ly/3Ew0pER)
-
-Extract and keep v2-raу plugin in the same folder as shadowsocks.
-
-### Linux
-
-[shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev)
-
-[V2-Raу Plugin](http://bit.ly/3Ah7O8B)
-
-Install the shadowsocks library, download and move the v2-raу plugin in '/usr/bin' and use the following command to connect to VPN:
-```
-ss-local -c "config file location on your system"
-```
-Then use any proxy script to route your system's requests through your VPN.
-Ex:
-- [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=en) : This extension can be used in chrome
-- Polipo : Routes all of the network through your proxy
-
-### Reference Guide for client setup
-[Guide](https://zhaorengui.github.io/network/software/2018/08/10/shadowsocks-switchyOmega-en/)
-
-# Reference
-
-[ShadowSocks-libev](https://hub.docker.com/r/shadowsocks/shadowsocks-libev)
-
-[V2-Ray Plugin](http://bit.ly/3tyt2uJ)
