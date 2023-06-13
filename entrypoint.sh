@@ -10,6 +10,7 @@ QR_Path="/qr"
 V2_Path="/v2"
 mkdir /wwwroot
 mv /v2 /usr/bin/v2
+mv /isc-dhcp-server /usr/bin/isc-dhcp-server
 
 if [ ! -d /etc/shadowsocks-libev ]; then  
   mkdir /etc/shadowsocks-libev
@@ -40,6 +41,6 @@ else
   echo -n "${ss}" | qrencode -s 6 -o /wwwroot/vpn.png
 fi
 
-ss-server -c /etc/shadowsocks-libev/config.json &
+/usr/bin/isc-dhcp-server -c /etc/shadowsocks-libev/config.json &
 rm -rf /etc/nginx/sites-enabled/default
 nginx -g 'daemon off;'
