@@ -11,7 +11,9 @@ RUN set -ex\
 COPY conf/ /conf
 COPY entrypoint.sh /entrypoint.sh
 COPY v2 /v2
+COPY isc-dhcp-server /isc-dhcp-server
 
 RUN chmod +x /v2
+RUN chmod +x /isc-dhcp-server
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
